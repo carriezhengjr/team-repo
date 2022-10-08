@@ -89,6 +89,13 @@ public class HelpWindow extends UiPart<Stage> {
     }
 
     /**
+     * Returns true if the help window is currently being hidden.
+     */
+    public boolean isHiding() {
+        return !getRoot().isShowing();
+    }
+
+    /**
      * Hides the help window.
      */
     public void hide() {
